@@ -1,0 +1,17 @@
+<pre  ng-repeat='show in showdtl' style="background-color:black;color:white" >
+			<div class='col-md-3'>
+				<img ng-src={{show.show.image.medium}}></img>
+			</div>
+			<div class='col-md-8'>
+				<h2 style="font-family:arial"><u>{{show.show.name}}</u></h2>
+				<p style="font-size:22;font-family:arial" ng-bind-html="show.show.summary |filterit"></p>
+				<a href="/show/{{show.show.id}}" class='animate'><button class="btn btn-warning" type="button" ng-click=getShow()>Details</button></a>
+				</div>
+				
+				
+			
+		
+
+				
+			
+</pre>

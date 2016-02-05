@@ -1,0 +1,30 @@
+<div class='container' >
+		<div class='row '>
+			<div class="col-md-8 text-center">
+				<h2 style="color:white">Enter your Favourite TV show here</h2>
+				<p ng-if='list' >{{list}}</p>
+				<form>
+				<div class="input-group">
+      				<input type="text" class="form-control" placeholder="Search for TV shows..." ng-model='showname' typeahead="solve for solve in arr|filter:$viewValue" >
+      				 
+      				</div>
+
+
+      				<span class="input-group-btn ">
+        			<button class="btn btn-primary" type="button" ng-click=getShow()>Go!</button>
+      				</span>
+    			</div>
+    			</form>
+			</div>
+		</div>
+		<div class='row' ng-if='showdtl'>
+			<custom-directive ></custom-directive>
+		</div>
+		<div class='row' ng-if='searches' ng-repeat="search in searches">
+			<h4 >{{search.show}}<h4>
+		</div>
+
+
+		
+</div>
+
