@@ -13,3 +13,8 @@
   - Again, the search history must be specific to an individual browser. This means using two separate browsers should yield two separate search histories.
 - Upon closing and re-opening the browser, the search history should be retained. To accomplish this, you are expected to read the search history from your API, or from Firebase. Since your API will support multiple search histories for various visitors, you should think of a way to uniquely identify browsers, and use this id to identify specific histories.
 
+## Search Auto-Complete
+
+- Using the Userâ€™s search history, make the search box an auto-complete box that will suggest recent searches based on what the User is typing.
+  - An example of an auto-complete box can be found under the typeahead section on the following page:
+  - https://angular-ui.github.io/bootstrap/#/typeahead
